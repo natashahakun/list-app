@@ -1,4 +1,5 @@
 body {
+  width: 100%;
   background-image: url("http://40.media.tumblr.com/e38b57f4c154787e3cb5fc244af90ed9/tumblr_nkymrq1Fys1slhhf0o1_1280.jpg");
 }
 
@@ -6,14 +7,34 @@ body {
 
 .nav-links {
   list-style-type: none;
+  width: 300px;
+  height: 40px;
+  float: right;
 }
 
 .nav-links li {
   display: inline;
+  float: right;
 }
 
 /********header********/
 
+.masthead {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
 
+.masthead h1 {
+  margin: 0 auto;
+}
 
 /********section-list********/
+
+.list-container {
+  height: 60%;
+}
+
+.list-item, .list-item-quantity, .list-item-cost {
+  display: inline-block;
+}
