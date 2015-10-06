@@ -1,20 +1,29 @@
 body {
   width: 100%;
   background-image: url("http://40.media.tumblr.com/e38b57f4c154787e3cb5fc244af90ed9/tumblr_nkymrq1Fys1slhhf0o1_1280.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.div {
+  border: 1px solid red;
 }
 
 /********nav********/
 
 .nav-links {
   list-style-type: none;
-  width: 300px;
+  width: 200px;
   height: 40px;
   float: right;
 }
 
 .nav-links li {
   display: inline;
-  float: right;
+  float: left;
+  margin-top: 10px;
+  margin-right: 5%;
+  padding-right: 5%;
 }
 
 /********header********/
@@ -22,7 +31,7 @@ body {
 .masthead {
   width: 60%;
   margin: 0 auto;
-  margin-top: 100px;
+  padding-top: 100px;
 }
 
 .masthead h1 {
@@ -32,9 +41,34 @@ body {
 /********section-list********/
 
 .list-container {
-  height: 60%;
+  width: 70%;
+  height: 500px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  background-color: #ffffff;
+  opacity: 0.4;
 }
 
 .list-item, .list-item-quantity, .list-item-cost {
   display: inline-block;
 }
+
+input {
+  width: 33%;
+  border-color: black;
+}
+
+/********footer********/
+
+.content-footer {
+  padding-top: 1px;
+  margin-bottom: 0;
+  width: 100%;
+  height: 45px;
+  text-align: center;
+  background-color: #ffffff;
+  opacity: 0.4;
+}
+
+
+
