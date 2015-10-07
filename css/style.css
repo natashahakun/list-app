@@ -6,13 +6,14 @@ body {
   background-repeat: no-repeat;
   font-family: "Helvetica", sans serif;
   -webkit-font-smoothing: antialiased;
+  overflow: auto;
 }
 
 /********header********/
 
 .masthead {
   width: 60%;
-  padding-top: 80px;
+  padding-top: 60px;
   margin: 0 auto;
   margin-bottom: 20px;
 }
@@ -27,7 +28,7 @@ body {
   width: 70%;
   height: 500px;
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   background-color: #ffffff;
   opacity: 0.4;
 }
@@ -46,11 +47,11 @@ body {
 }
 
 .item-quantity-input {
-  width: 18%;
+  width: 16%;
 }
 
 .item-cost-input {
-  width: 18%;
+  width: 16%;
 }
 
 input {
@@ -62,6 +63,7 @@ input {
 
 .btn-container {
   width: 30px;
+  padding: 0;
 }
 
 .btn-container button {
@@ -87,7 +89,7 @@ input {
 }
 
 .quantity, .cost  {
-  width: 18%;
+  width: 16%;
 }
 
 .checkbox {
@@ -114,9 +116,39 @@ input {
   text-align: center;
 }
 
+.content-footer p {
+  margin-top: 0;
+}
+
 .content-footer a {
   color: #8A0808;
 }
 
+/********media-queries********/
 
+@media only screen and (max-width: 768px) {
+  .list-container {
+    width: 85%;
+  }
+  input {
+    font-size: 14px;
+  }
+}
 
+@media only screen and (max-width: 480px) {
+  .list-container {
+    width: 100%;
+  }
+  .item-input {
+    width: 45%;
+  }
+  .item-quantity-input, .item-cost-input {
+    width: 15%;
+  }
+  input {
+    font-size: 12px;
+  }
+  .btn-container {
+    padding-left: 1%;
+  }
+}
