@@ -3,10 +3,7 @@ body {
   background-image: url("http://40.media.tumblr.com/e38b57f4c154787e3cb5fc244af90ed9/tumblr_nkymrq1Fys1slhhf0o1_1280.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.div {
-  border: 1px solid red;
+  font-family: "Helvetica", sans serif;
 }
 
 /********nav********/
@@ -24,14 +21,16 @@ body {
   margin-top: 10px;
   margin-right: 5%;
   padding-right: 5%;
+  color: #8A0808;
 }
 
 /********header********/
 
 .masthead {
   width: 60%;
-  margin: 0 auto;
   padding-top: 100px;
+  margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 .masthead h1 {
@@ -51,10 +50,26 @@ body {
 
 .list-item, .list-item-quantity, .list-item-cost {
   display: inline-block;
+  width: 40%;
+  padding-top: 10px;
+  padding-right: 1%;
+  padding-left: 1%;
+}
+
+.list-item {
+  width: 50%;
+}
+
+.list-item-quantity {
+  width: 20%;
+}
+
+.list-item-cost {
+  width: 20%;
 }
 
 input {
-  width: 33%;
+  width: 100%;
   border-color: black;
 }
 
@@ -68,6 +83,10 @@ input {
   text-align: center;
   background-color: #ffffff;
   opacity: 0.4;
+}
+
+.content-footer a {
+  color: #8A0808;
 }
 
 
