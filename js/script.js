@@ -13,5 +13,14 @@ $(document).ready(function() {
     $(newItem).append(item);
     $(newItemContainer).append(newItem);
 
+    var newQuantity = $("<div>", {class: "quantity"});
+    var quantity = $(".quantity-input").val();
+    $(newQuantity).append(quantity);
+    $(newItemContainer).append(newQuantity);
+
+    var newCost = $("<div>", {class: "cost"})
+    var cost = $(".cost-input").val();
+    $(newCost).append(cost);
+    $(newItemContainer).append(newCost);
   })
 });
