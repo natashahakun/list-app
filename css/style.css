@@ -33,7 +33,7 @@ body {
   opacity: 0.4;
 }
 
-.item-input, .item-quantity-input, .item-cost-input, .btn-container {
+.item-input-container, .quantity-input-container, .cost-input-container, .btn-container {
   display: inline-block;
   padding-top: 10px;
   padding-right: 1%;
@@ -41,16 +41,12 @@ body {
   height: 30px;
 }
 
-.item-input {
+.item-input-container {
   width: 50%;
   padding-left: 2%;
 }
 
-.item-quantity-input {
-  width: 16%;
-}
-
-.item-cost-input {
+.quantity-input-container, .cost-input-container {
   width: 16%;
 }
 
@@ -139,10 +135,10 @@ input {
   .list-container {
     width: 100%;
   }
-  .item-input {
+  .item-input-container {
     width: 45%;
   }
-  .item-quantity-input, .item-cost-input {
+  .quantity-input-container, .cost-input-container {
     width: 15%;
   }
   input {
