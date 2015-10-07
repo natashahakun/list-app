@@ -48,9 +48,8 @@ body {
   opacity: 0.4;
 }
 
-.list-item, .list-item-quantity, .list-item-cost {
+.list-item, .list-item-quantity, .list-item-cost, .btn-container {
   display: inline-block;
-  width: 40%;
   padding-top: 10px;
   padding-right: 1%;
   padding-left: 1%;
@@ -61,15 +60,16 @@ body {
 }
 
 .list-item-quantity {
-  width: 20%;
+  width: 18%;
 }
 
 .list-item-cost {
-  width: 20%;
+  width: 18%;
 }
 
 input {
   width: 100%;
+  color: black;
   border-color: black;
 }
 
