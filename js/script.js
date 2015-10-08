@@ -3,10 +3,10 @@ $(document).ready(function() {
   $("button").click(function() {
     var newItemContainer = $("<div></div>", {class: "item-container"});
     $(".registered-inputs").append(newItemContainer);
-    var newCheckBox = $("<form></form>", {class: "checkbox"});
+    var newCheckBox = $("<form></form>", {class: "checkbox-container"});
     $(newItemContainer).append(newCheckBox);
-    var newCheckBoxInput = $("<input>", {type: "checkbox"});
-    $(newItemContainer).append(newCheckBoxInput);
+    var newCheckBoxInput = $("<input>", {type: "checkbox"}, {class: "checkbox"});
+    $(newCheckBox).append(newCheckBoxInput);
 
     var newItem = $("<div></div>", {class: "item"});
     var item = $(".item-input").val();
@@ -22,5 +22,18 @@ $(document).ready(function() {
     var cost = $(".cost-input").val();
     $(newCost).append(cost);
     $(newItemContainer).append(newCost);
-  })
+
+    $(".item-input").val('');
+    $(".quantity-input").val('');
+    $(".cost-input").val('');
+  });
+
+  $("input:checkbox").change(function(){
+    if($(this).is(":checked")) {
+      $(this).parent().siblings().addClass("checked");
+    }
+    else if($(this).not(":checked")) {
+      $(this).parent().siblings().removeClass("checked");
+    }
+  });
 });

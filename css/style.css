@@ -72,11 +72,15 @@ input {
 
 /********registered-inputs********/
 
+.item-container {
+  height: 47px;
+}
+
 .item, .quantity, .cost {
   display: inline-block;
-  padding-top: 10px;
   padding-right: 1%;
-  padding-left: 2%;
+  padding-bottom: 20px;
+  padding-left: 3%;
   height: 30px;
 }
 
@@ -88,15 +92,19 @@ input {
   width: 16%;
 }
 
-.checkbox {
+.checkbox-container {
   display: inline-block;
   width: 25px;
   height: 25px;
-  padding-top: 20px;
-  padding-left: 1%;
+  padding-left: 2%;
 }
 
-.checked p {
+.checkbox-container input {
+  display: inline-block;
+  padding-top: 10px;
+}
+
+.checked {
   text-decoration: line-through;
   font-style: italic;
 }
@@ -129,6 +137,9 @@ input {
   input {
     font-size: 14px;
   }
+  .item, .quantity, .cost {
+  padding-left: 2%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -147,4 +158,6 @@ input {
   .btn-container {
     padding-left: 1%;
   }
+  .item, .quantity, .cost {
+    padding-left: 0;
 }
