@@ -28,7 +28,7 @@ $(document).ready(function() {
     $(".cost-input").val('');
   });
 
-  $("input:checkbox").change(function(){
+  $(".registered-inputs").on("change", "input:checkbox", function(){
     if($(this).is(":checked")) {
       $(this).parent().siblings().addClass("checked");
     }
