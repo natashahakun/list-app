@@ -20,7 +20,7 @@ $(document).ready(function() {
 
     var newCost = $("<div>", {class: "cost"})
     var cost = $(".cost-input").val();
-    $(newCost).append(cost);
+    $(newCost).append("$" + cost);
     $(newItemContainer).append(newCost);
 
     $(".item-input").val('');
