@@ -29,8 +29,9 @@ body {
   height: 500px;
   margin: 0 auto;
   margin-bottom: 50px;
-  background-color: #ffffff;
-  opacity: 0.4;
+  background-color: #BDBDBD;
+  opacity: 0.7;
+  overflow-y: scroll;
 }
 
 .item-input-container, .quantity-input-container, .cost-input-container, .btn-container {
