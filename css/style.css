@@ -93,6 +93,31 @@ input {
   width: 16%;
 }
 
+.delete {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: none;
+  color: black;
+  background-color: #BDBDBD;
+  cursor: pointer;
+}
+.delete::-webkit-input-placeholder {
+   color: black;
+}
+
+.delete:-moz-placeholder { /* Firefox 18- */
+   color: black;
+}
+
+.delete::-moz-placeholder {  /* Firefox 19+ */
+   color: black;
+}
+
+.delete:-ms-input-placeholder {
+   color: black;
+}
+
 .checkbox-container {
   display: inline-block;
   width: 25px;

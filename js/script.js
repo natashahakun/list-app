@@ -18,10 +18,15 @@ $(document).ready(function() {
     $(newQuantity).append(quantity);
     $(newItemContainer).append(newQuantity);
 
-    var newCost = $("<div>", {class: "cost"})
+    var newCost = $("<div>", {class: "cost"});
     var cost = $(".cost-input").val();
     $(newCost).append("$" + cost);
     $(newItemContainer).append(newCost);
+
+    var deleteContainer = $("<div>", {class: "delete"});
+    $(deleteContainer).append("X");
+    $(newItemContainer).append(deleteContainer);
+
 
     $(".item-input").val('');
     $(".quantity-input").val('');
@@ -36,4 +41,8 @@ $(document).ready(function() {
       $(this).parent().siblings().removeClass("checked");
     }
   });
+
+  $(".registered-inputs").on("click", ".delete", function(){
+    $(this).parents('div').eq(0).remove();
+  })
 });
